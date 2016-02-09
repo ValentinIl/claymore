@@ -1,0 +1,281 @@
+/*------config------*/
+@font-face {
+  font-family: 'BlessedDay';
+  src: url(../fonts/blessedday.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans-Light.ttf) format("truetype"), url(../fonts/OpenSans-Regular.ttf) format("truetype"), url(../fonts/OpenSans-Bold.ttf) format("truetype");
+}
+/*------base------*/
+body {
+  font-family: 'OpenSans';
+  font-size: 18px;
+}
+.navbar-brand {
+  font-family: 'BlessedDay';
+}
+/*------layout------*/
+/*Header*/
+header {
+  background: url("../images/bg_header.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  color: #fff;
+}
+header .navbar {
+  background: none;
+  border: none;
+  margin: 80px 0 180px;
+}
+header .navbar .navbar-header a {
+  color: #fff;
+  font-size: 72px;
+}
+header .navbar .nav a {
+  color: #fff;
+  font-size: 18px;
+  padding-right: 0;
+}
+header .describe {
+  text-align: center;
+}
+header .describe h2 {
+  margin: 50px 0;
+  font-size: 30px;
+}
+header .describe p {
+  margin-bottom: 50px;
+}
+/*About*/
+#about {
+  padding: 120px 0;
+}
+#about h3 {
+  margin-top: 40px;
+}
+#about img {
+  vertical-align: bottom;
+  margin-right: 15px;
+}
+/*Service*/
+#service {
+  background-color: #f6f6f6;
+  padding: 60px 0 90px;
+}
+#service h4 {
+  margin: 30px;
+}
+/*Features*/
+#features {
+  position: relative;
+}
+#features .container-fluid {
+  padding: 0;
+  background: url("../images/bg_features.jpg");
+  background-size: cover;
+}
+#features .photo {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/*Testimonals*/
+#testimonals {
+  padding: 150px 0;
+}
+#testimonals h1 {
+  margin: 40px;
+}
+#testimonals img {
+  float: left;
+  height: 120px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+/*Contact*/
+#contact {
+  background-color: #34495e;
+  color: #fff;
+  padding: 90px 0;
+}
+#contact p {
+  margin-bottom: 30px;
+}
+#contact p + p {
+  margin-bottom: 10px;
+}
+#contact p .fa {
+  padding-right: 10px;
+}
+#contact form .form-control {
+  background-color: #5d6d7e;
+  margin-bottom: 15px;
+  color: #fff;
+}
+#contact form .form-control:placeholder {
+  color: #fff;
+}
+#contact form input.form-control {
+  width: 48%;
+  display: inline-block;
+}
+#contact form input.form-control:nth-child(2) {
+  float: right;
+}
+#contact form span.form-control-feedback {
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 5px;
+  background-color: #48c9b0;
+  border-radius: 2px;
+}
+#contact form textarea {
+  height: 150px;
+}
+#contact form .btn {
+  padding: 15px 60px;
+  font-size: 18px;
+  float: right;
+  margin-left: 15px;
+}
+/*Footer*/
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 90px;
+  position: relative;
+}
+footer div:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 0;
+  top: -50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 25px solid transparent;
+  border-bottom-color: #2c3e50;
+}
+/*------module------*/
+/* Carousel */
+.carousel .carousel-inner {
+  overflow: visible;
+}
+.carousel .carousel-inner .item {
+  height: 500px;
+}
+.carousel .carousel-inner .item .carousel-caption {
+  position: inherit;
+}
+.carousel .carousel-inner .item .carousel-caption img {
+  position: absolute;
+  width: 380px;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+.carousel .carousel-control {
+  background: none;
+}
+/* ToTop-btn */
+#toTop {
+  text-decoration: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  overflow: hidden;
+  border: none;
+  color: #f48b6e;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 38px;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+/* For lth ie9 */
+.for-ie {
+  display: none;
+}
+/*------state------*/
+@media (max-width: 992px) {
+  header .navbar {
+    margin: 10px;
+  }
+  header .describe {
+    text-align: center;
+  }
+  header .describe img {
+    float: left;
+    max-width: 50%;
+  }
+  header .describe h2,
+  header .describe p,
+  header .describe .btn-block {
+    margin: 20px auto;
+  }
+  header .describe .text-describe {
+    margin-top: 15%;
+  }
+  #about {
+    padding: 20px;
+  }
+  #about h3 {
+    margin-top: 20px;
+  }
+  #about .img-block {
+    margin-top: 15%;
+  }
+  #service {
+    padding: 20px;
+  }
+  #features img {
+    max-width: 75%;
+  }
+  #features .item {
+    height: 400px;
+  }
+  #testimonals {
+    padding: 50px 0 20px;
+  }
+  #contact {
+    padding: 20px 0 40px;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  #service img {
+    float: left;
+  }
+}
+@media (max-width: 480px) {
+  header .describe img {
+    display: none;
+  }
+  header .describe .btn-block:nth-child(n) {
+    display: block;
+  }
+  #about .col-xs-6 {
+    width: 100%;
+  }
+  #service img {
+    float: none;
+  }
+  #features .item img {
+    max-width: 50%;
+    bottom: 35px;
+  }
+  #contact .btn {
+    width: 80%;
+    margin: 10px;
+  }
+}
