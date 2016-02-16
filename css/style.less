@@ -25,11 +25,6 @@
 
   .container {
     width: 940px;
-    // padding: 0;
-  }
-
-  .container-fluid {
-    // padding: 0;
   }
 
   .navbar-brand {
@@ -374,7 +369,7 @@
 
       img {
         position: absolute;
-        width: 450px;
+        // width: 450px;
         height: 280px;
         bottom: -10px;
         left: 20px;
@@ -534,7 +529,7 @@
         padding: 30px 0;
 
         .nav a {
-          margin: 0;
+          margin: -3px;
         }
       }
 
@@ -581,12 +576,8 @@
       }
 
       .carousel-control {
-           width: 15%; 
+        width: 15%; 
       }
-    }
-
-    #testimonals {
-      padding: 50px 0 20px;
     }
 
     #contact {
@@ -625,14 +616,23 @@
     }
 
     #features {
-      .container-fluid .photo {
-        top: 116px;
+      .photo {
+        display: none;
       }
 
       .item {
         img {
-          bottom: -20px;
+          top: 40px;
+          max-height: 48%;
         }
+      }
+    }
+
+    #testimonals {
+      padding: 50px 0 20px;
+
+      h1 {
+        margin: 0;
       }
     }
 
@@ -646,13 +646,9 @@
 
   @media (max-width: 480px) {
     #features {
-      .photo {
-        display: none;
-      }
-
       .item img{
-       width: 50%;
-       height: 50%;
+       // width: 50%;
+       // height: 50%;
       }
     }
   }
